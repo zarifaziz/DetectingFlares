@@ -94,6 +94,7 @@ def main(epochs=50, batch_size=32, validation_split=0.2):
 
     model.fit(X, y, batch_size=batch_size, epochs=epochs, validation_split=validation_split)
 
+    # saving the final model as a pickle file, to be used by the detector.py file
     pickle.dump(model, open("model.pickle", "wb"))
 
 

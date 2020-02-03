@@ -1,6 +1,7 @@
 import cv2
 import numpy as np
-import sys, os
+import sys
+import os
 from tensorflow.keras.models import model_from_json
 
 
@@ -17,7 +18,7 @@ def load_model():
 
 
 def detect_flare_from_image(img_file, model):
-    """Calls model.predict(image) for the new image. Prints '1' or '0' for faulty and good images respectively."""
+    """Calls model.predict(image) for the new image. Prints '1' or '0' for 'faulty' and 'good' images respectively."""
     # pre-processing the image
     new_img = cv2.resize(img_file, (500, 400))
     new_img = np.array(new_img).reshape(-1, 400, 500, 3)
@@ -60,7 +61,7 @@ def test_good_images():
 
 
 def main():
-    files = [sys.argv[1], sys.argv[2]]
+    files = sys.argv[1:]
 
     model = load_model()
 
