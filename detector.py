@@ -65,7 +65,6 @@ def main():
     model = load_model()
 
     for file in files:
-        print(f'file: {file}')
         img = cv2.imread(str(file))
         detect_flare_from_image(img, model)
 
@@ -81,4 +80,3 @@ def main():
 
 if __name__ == '__main__':
     main()
-    # test_good_images()
