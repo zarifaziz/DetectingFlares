@@ -99,5 +99,5 @@ def main(epochs=50, batch_size=32, validation_split=0.2):
 
 
 if __name__ == '__main__':
-    """Running this file will setup and train the flare predicion model. Output is a pickle file called 'model'."""
+    """Running this file will setup and train the flare prediction model. Output is a pickle file called 'model'."""
     main()

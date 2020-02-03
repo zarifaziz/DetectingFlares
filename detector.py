@@ -69,15 +69,6 @@ def main():
         img = cv2.imread(str(file))
         detect_flare_from_image(img, model)
 
-    # file = sys.argv[1]
-    #
-    # model = load_model()
-    # print(f"File: {file}")
-    #
-    # img = cv2.imread(str(file))
-    #
-    # detect_flare_from_image(img, model)
-
 
 if __name__ == '__main__':
     main()
