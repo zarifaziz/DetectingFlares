@@ -73,7 +73,7 @@ def create_model(X):
     model.add(Dense(64))
     model.add(Activation('relu'))
 
-    model.add(Dropout(0.5))
+    model.add(Dropout(0.5)) # using dropout to decrease over-fitting
     model.add(Dense(1))
     model.add(Activation('sigmoid'))
 

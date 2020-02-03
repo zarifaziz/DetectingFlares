@@ -1,4 +1,3 @@
 /venv/
-/logs/
-/training/
 /.idea/
+/test/
