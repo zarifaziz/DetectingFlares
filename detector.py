@@ -61,10 +61,13 @@ def test_good_images():
 
 
 def main():
+    """Main function that runs the classifier over the images provided"""
+    # read in images provided
     files = sys.argv[1:]
-
+    # load pre-trained CNN model
     model = load_model()
 
+    # Go through each image and classify
     for file in files:
         img = cv2.imread(str(file))
         detect_flare_from_image(img, model)
