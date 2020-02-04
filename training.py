@@ -86,16 +86,21 @@ def create_model(X):
     return model
 
 
-def main(epochs=50, batch_size=32, validation_split=0.2):
-    """Running main function. Outputs the final model as pickle file."""
+def main(epochs=20, batch_size=32, validation_split=0.2):
+    """Running main function. Saves the final model to disk."""
     X, y = create_training_data()
 
     model = create_model(X)
 
     model.fit(X, y, batch_size=batch_size, epochs=epochs, validation_split=validation_split)
 
-    # saving the final model as a pickle file, to be used by the detector.py file
-    pickle.dump(model, open("model.pickle", "wb"))
+    # serialize model to JSON
+    model_json = model.to_json()
+    with open("model.json", "w") as json_file:
+        json_file.write(model_json)
+    # serialize weights to HDF5
+    model.save_weights("model.h5")
+    print("Saved model to disk")
 
 
 if __name__ == '__main__':
