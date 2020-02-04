@@ -2,7 +2,6 @@ import cv2
 import os
 import random
 import numpy as np
-import pickle
 from tensorflow.keras import optimizers
 from tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import Conv2D, MaxPooling2D, Activation, Dropout, Flatten, Dense

@@ -5,7 +5,7 @@ is subject to lens flare or not.
 
 Outputs 1s and 0s for 'faulty' and 'good' images respectively.
 
-## Getting Started
+## Running the Program
 
 These instructions will get you a copy of the tool up and running on your local machine.
 
