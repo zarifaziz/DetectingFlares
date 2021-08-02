@@ -5,7 +5,7 @@ is subject to lens flare or not.
 
 Outputs 1s and 0s for 'faulty' and 'good' images respectively.
 
-![Image with Flare](./training/flare/G0015142.png)
+![Image with Flare](./training/flare/G0015142.JPG)
 
 ## Running the Program
 
