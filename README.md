@@ -5,6 +5,8 @@ is subject to lens flare or not.
 
 Outputs 1s and 0s for 'faulty' and 'good' images respectively.
 
+![Image with Flare](./training/flare/G0015142.png)
+
 ## Running the Program
 
 These instructions will get you a copy of the tool up and running on your local machine.
